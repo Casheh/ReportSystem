@@ -15,11 +15,11 @@ public class MySQL {
     private final String PASSWORD;
 
     public MySQL(ReportSystem plugin) {
-        HOST = "localhost";
-        PORT = "3306";
-        DATABASE = "reports";
-        USERNAME = "root";
-        PASSWORD = "";
+        HOST = plugin.getConfig().getString("mysql.host");
+        PORT = plugin.getConfig().getString("mysql.port");
+        DATABASE = plugin.getConfig().getString("mysql.database");
+        USERNAME = plugin.getConfig().getString("mysql.username");
+        PASSWORD = plugin.getConfig().getString("mysql.password");
     }
 
     private Connection connection;
