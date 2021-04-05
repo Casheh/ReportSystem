@@ -1,0 +1,11 @@
+# SQL information.
+mysql:
+  host: 'localhost'
+  port: 3306
+  database: 'reports'
+  username: root
+  password: ''
+
+# If this boolean is set to true, MySQL will be used. Otherwise, all reports will be stored in a YAML file.
+use-sql: false
+
